@@ -42,9 +42,9 @@ export function WebAppLayout() {
         </main>
       </div>
 
-      {/* Clean Web App Footer */}
+      {/* Clean Web App Footer with Canonical IETF RFC Links */}
       <footer className="w-full win95-panel bg-[#c0c0c0] border-t-2 border-[#808080] py-3 px-4 mt-8 select-none">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-xs font-mono text-gray-800">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-xs font-mono text-gray-800">
           <div className="flex items-center gap-2">
             <Image
               src="/logo.png"
@@ -57,13 +57,41 @@ export function WebAppLayout() {
               HTTP &amp; HTTPS PROTOCOL EXPLORER
             </span>
           </div>
-          <div className="flex items-center gap-3 text-[11px] text-gray-700">
-            <span>RFC 2616 (HTTP/1.1)</span>
-            <span>/</span>
-            <span>RFC 8446 (TLS 1.3)</span>
-            <span>/</span>
-            <span>RFC 9114 (HTTP/3)</span>
-          </div>
+
+          {/* Authoritative IETF RFC Specifications */}
+          <nav aria-label="IETF RFC Specifications" className="flex flex-wrap items-center gap-2 text-[11px] text-gray-700">
+            <span className="text-gray-500 font-sans font-medium">IETF Specifications:</span>
+            <a
+              href="https://www.rfc-editor.org/rfc/rfc2616"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#000080] underline hover:text-blue-900 cursor-pointer font-bold focus:outline-dotted focus:outline-1"
+              title="IETF RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1 (opens in a new tab)"
+            >
+              RFC 2616 (HTTP/1.1)
+            </a>
+            <span className="text-gray-400">/</span>
+            <a
+              href="https://www.rfc-editor.org/rfc/rfc8446"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#000080] underline hover:text-blue-900 cursor-pointer font-bold focus:outline-dotted focus:outline-1"
+              title="IETF RFC 8446: The Transport Layer Security (TLS) Protocol Version 1.3 (opens in a new tab)"
+            >
+              RFC 8446 (TLS 1.3)
+            </a>
+            <span className="text-gray-400">/</span>
+            <a
+              href="https://www.rfc-editor.org/rfc/rfc9114"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#000080] underline hover:text-blue-900 cursor-pointer font-bold focus:outline-dotted focus:outline-1"
+              title="IETF RFC 9114: HTTP/3 over QUIC (opens in a new tab)"
+            >
+              RFC 9114 (HTTP/3)
+            </a>
+          </nav>
+
           <div className="text-[11px] text-gray-600 font-sans">
             Windows 95 Web Architecture Reference
           </div>

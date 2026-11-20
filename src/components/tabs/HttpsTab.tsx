@@ -34,9 +34,15 @@ export function HttpsTab() {
             </div>
           </div>
           <div className="flex flex-wrap items-center gap-1.5 shrink-0">
-            <span className="font-arcade text-xs bg-blue-900 text-white px-2 py-1 border border-black">
+            <a
+              href="https://www.rfc-editor.org/rfc/rfc8446"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-arcade text-xs bg-blue-900 text-white px-2 py-1 border border-black hover:bg-blue-800 cursor-pointer"
+              title="Read IETF RFC 8446 specification (opens in a new tab)"
+            >
               TLS 1.3 / RFC 8446
-            </span>
+            </a>
           </div>
         </div>
         <p className="font-sans text-xs sm:text-sm text-gray-800 mt-2.5 leading-relaxed">

@@ -39,9 +39,15 @@ export function HttpTab() {
             </div>
           </div>
           <div className="flex flex-wrap items-center gap-1.5 shrink-0">
-            <span className="font-arcade text-xs bg-gray-200 text-black px-2 py-1 border border-gray-600">
+            <a
+              href="https://www.rfc-editor.org/rfc/rfc2616"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-arcade text-xs bg-gray-200 text-black px-2 py-1 border border-gray-600 hover:bg-gray-300 cursor-pointer"
+              title="Read IETF RFC 2616 specification (opens in a new tab)"
+            >
               LAYER 7 / RFC 2616
-            </span>
+            </a>
           </div>
         </div>
         <p className="font-sans text-xs sm:text-sm text-gray-800 mt-2.5 leading-relaxed">
@@ -101,7 +107,15 @@ export function HttpTab() {
       <div className="win95-panel p-3 sm:p-4">
         <div className="win95-header px-2.5 py-1 mb-3 flex items-center justify-between text-xs">
           <span className="font-arcade text-xs sm:text-sm text-white">HTTP METHODS &amp; STATUS MATRIX</span>
-          <span className="font-mono text-[10px] text-gray-200">RFC 7231</span>
+          <a
+            href="https://www.rfc-editor.org/rfc/rfc7231"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-mono text-[10px] text-gray-200 hover:text-white underline cursor-pointer"
+            title="Read IETF RFC 7231 specification (opens in a new tab)"
+          >
+            RFC 7231
+          </a>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
